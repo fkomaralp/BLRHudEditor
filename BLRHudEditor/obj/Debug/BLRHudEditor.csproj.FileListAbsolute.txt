@@ -1,0 +1,17 @@
+C:\Users\Fatih\source\repos\BLRHudEditor\BLRHudEditor\bin\Debug\BLRHudEditor.exe.config
+C:\Users\Fatih\source\repos\BLRHudEditor\BLRHudEditor\bin\Debug\BLRHudEditor.exe
+C:\Users\Fatih\source\repos\BLRHudEditor\BLRHudEditor\bin\Debug\BLRHudEditor.pdb
+C:\Users\Fatih\source\repos\BLRHudEditor\BLRHudEditor\obj\Debug\BLRHudEditor.Form1.resources
+C:\Users\Fatih\source\repos\BLRHudEditor\BLRHudEditor\obj\Debug\BLRHudEditor.Properties.Resources.resources
+C:\Users\Fatih\source\repos\BLRHudEditor\BLRHudEditor\obj\Debug\BLRHudEditor.csproj.GenerateResource.cache
+C:\Users\Fatih\source\repos\BLRHudEditor\BLRHudEditor\obj\Debug\BLRHudEditor.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\source\repos\BLRHudEditor\BLRHudEditor\obj\Debug\BLRHudEditor.exe
+C:\Users\Fatih\source\repos\BLRHudEditor\BLRHudEditor\obj\Debug\BLRHudEditor.pdb
+C:\Users\Fatih\source\repos\BLRHudEditor\BLRHudEditor\obj\Debug\BLRHudEditor.OptionsForm.resources
+C:\Users\Fatih\source\repos\BLRHudEditor\BLRHudEditor\obj\Debug\BLRHudEditor.SplashScreen.resources
+C:\Users\Fatih\source\repos\BLRHudEditor\BLRHudEditor\bin\Debug\INIFileParser.dll
+C:\Users\Fatih\source\repos\BLRHudEditor\BLRHudEditor\bin\Debug\INIFileParser.xml
+C:\Users\Fatih\source\repos\BLRHudEditor\BLRHudEditor\obj\Debug\BLRHudEditor.csproj.CopyComplete
+C:\Users\Fatih\source\repos\BLRHudEditor\BLRHudEditor\obj\Debug\BLRHudEditor.csprojAssemblyReference.cache
+C:\Users\Fatih\source\repos\BLRHudEditor\BLRHudEditor\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Fatih\source\repos\BLRHudEditor\BLRHudEditor\bin\Debug\Newtonsoft.Json.xml
