@@ -113,15 +113,15 @@ namespace BLRHudEditor
         {
             if (e.Button == MouseButtons.Left)
             {
-                KilledPlayerInfoWidget.Location =  this.PointToClient(Cursor.Position);
                 int x_rot = ((Cursor.Position.X - 955) + 350);
-
-                if (x_rot >= -348)
-                    x.Text = x_rot.ToString();
-
                 int y_rot = ((Cursor.Position.Y - 810) + 350);
-                if (y_rot >= -270)
-                    y.Text = y_rot.ToString();
+
+                KilledPlayerInfoWidget.Location =  this.PointToClient(Cursor.Position);
+
+
+                x.Text = x_rot.ToString();
+
+                y.Text = y_rot.ToString();
             }
                
         }
