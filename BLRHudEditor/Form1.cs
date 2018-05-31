@@ -119,9 +119,11 @@ namespace BLRHudEditor
                 KilledPlayerInfoWidget.Location =  this.PointToClient(Cursor.Position);
 
 
-                x.Text = x_rot.ToString();
+                //if (x_rot >= -348)
+                    x.Text = x_rot.ToString();
 
-                y.Text = y_rot.ToString();
+                //if (y_rot >= -270)
+                    y.Text = y_rot.ToString();
             }
                
         }
