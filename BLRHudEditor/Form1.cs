@@ -57,7 +57,6 @@ namespace BLRHudEditor
 
             }
 
-            
 
             Thread.Sleep(1000);
 
@@ -134,7 +133,12 @@ namespace BLRHudEditor
             comboBox1.SelectedItem = "KilledPlayerInfoWidget";
         }
 
-        private void Test(object sender, EventArgs e)
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Widgets_SelectedIndexChanged(object sender, EventArgs e)
         {
             string widget_name = (string)comboBox1.SelectedItem;
 
@@ -145,8 +149,8 @@ namespace BLRHudEditor
 
             string[] widget_values = widget_value.Replace("(", "").Replace(")", "").Split(',');
 
-            string x_value = widget_values[0].Replace("X=" ,"");
-            string y_value = widget_values[1].Replace("Y=" ,"");
+            string x_value = widget_values[0].Replace("X=", "");
+            string y_value = widget_values[1].Replace("Y=", "");
             string FOV_value = widget_values[2].Replace("FOV=", "");
             string YRot_value = widget_values[3].Replace("YRot=", "");
             string Opacity_value = widget_values[4].Replace("Opacity=", "");
@@ -161,9 +165,7 @@ namespace BLRHudEditor
             fov.Text = FOV_value;
             yrot.Text = YRot_value;
             opacity.Text = Opacity_value;
-
-
-
         }
+
     }
 }

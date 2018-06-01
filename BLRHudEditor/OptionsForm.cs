@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,8 @@ namespace BLRHudEditor
             InitializeComponent();
         }
 
+        string steam_path, FoxHud_ini;
+
         private void OptionsForm_Load(object sender, EventArgs e)
         {
             var parser = new FileIniDataParser();
@@ -30,7 +33,7 @@ namespace BLRHudEditor
             string customSteamPath = data["paths"]["CustomSteamPath"];
 
 
-            if(useCustomPath == "0")
+            if (useCustomPath == "0")
             {
                 autoFindRadioBtn.Checked = true;
             } else
@@ -40,6 +43,17 @@ namespace BLRHudEditor
 
             textBox1.Text = steamPath;
             textBox2.Text = customSteamPath;
+
+            IniData settings = parser.ReadFile("settings.ini");
+            if (settings["paths"]["UseCustomPath"] == "1")
+            {
+                steam_path = settings["paths"]["CustomSteamPath"];
+            }
+            else
+            {
+                steam_path = settings["paths"]["SteamPath"];
+            }
+
 
         }
 
@@ -87,6 +101,29 @@ namespace BLRHudEditor
             }
 
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FoxHud_ini = steam_path + @"\steamapps\common\blacklightretribution\FoxGame\Config\PCConsole\Cooked";
+
+            string backupFolder = "BLEHudEditor";
+
+            var backupFolderExists = File.Exists(Path.Combine(FoxHud_ini, backupFolder));
+            if (!backupFolderExists)
+            {
+                Directory.CreateDirectory(Path.Combine(FoxHud_ini, backupFolder));
+            }
+
+            string[] FoxHud_ini_files = Directory.GetFiles(FoxHud_ini);
+
+            foreach (var item in FoxHud_ini_files)
+            {
+                string fileName = Path.GetFileName(item);
+                string targetFolder = Path.Combine(FoxHud_ini, Path.Combine(backupFolder, fileName));
+
+                File.Copy(item, targetFolder, true);
+            }
         }
     }
 }
